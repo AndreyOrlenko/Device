@@ -1,30 +1,30 @@
 'use strict';
-const gulp = require('gulp');
-const less = require('gulp-less');//Преобразует less в css
-const concat = require('gulp-concat'); //Объедияет файлы
-const debug = require('gulp-debug'); //Выводит информацию о проделанной работе в консоль
-const sourcemaps = require('gulp-sourcemaps');// карта файла, из чего он состоит. Позволяет видеть в браузере все составляющие файла
-const del = require('del'); // удаление дерикторий
-const uglify = require('gulp-uglify'); // Минимизирует js файлы
-const imgMin = require('gulp-imagemin'); // минификация изображений
-const pngquant = require('imagemin-pngquant'); // минифицирует png
-const notify = require('gulp-notify'); // обработчик ошибок
-const merge = require('merge-stream'); // Сливает несколько потоков в один
-const browserSync = require('browser-sync'); // обновляет страницу в браузере
-const cssMin = require('gulp-minify-css'); //  Минимизирует css файлы
-const spritesmith = require('gulp.spritesmith'); //Создает png спрайты
-const paths = require('path'); // пути
-const replaceUrl = require('gulp-css-replace-url'); // Замена url путей в css файлах
-const svgSprite = require('gulp-svg-sprite'); // создание svg спрайтов
-const combiner = require('stream-combiner2').obj; // нужен для обработки ошибок в тасках
-const filter = require('gulp-filter'); // Пропускает через себя только определенные файлы
-const ignore = require('gulp-ignore'); // Игнорирует определенные файлы
-const rigger = require('gulp-rigger'); // можно импортировать куски кода при помощи конструкции //= footer.html
-const rename = require('gulp-rename'); // изменяет имя файла .pipe(rename('vendor.min.js`))
-const cached = require('gulp-cached'); // пропускает через себя файлы и файлы с одним и тем же именем и содержимым не пропускает
-const autoprefix = require('gulp-autoprefixer'); // добавляет префиксы
-const newer = require('gulp-newer');// сравнивает поступающие файлы с файлами в конечной директории
-const If = require('gulp-if');
+const gulp         = require('gulp');
+const less         = require('gulp-less');//Преобразует less в css
+const concat       = require('gulp-concat'); //Объедияет файлы
+const debug        = require('gulp-debug'); //Выводит информацию о проделанной работе в консоль
+const sourcemaps   = require('gulp-sourcemaps');// карта файла, из чего он состоит. Позволяет видеть в браузере все составляющие файла
+const del          = require('del'); // удаление дерикторий
+const uglify       = require('gulp-uglify'); // Минимизирует js файлы
+const imgMin       = require('gulp-imagemin'); // минификация изображений
+const pngquant     = require('imagemin-pngquant'); // минифицирует png
+const notify       = require('gulp-notify'); // обработчик ошибок
+const merge        = require('merge-stream'); // Сливает несколько потоков в один
+const browserSync  = require('browser-sync'); // обновляет страницу в браузере
+const cssMin       = require('gulp-minify-css'); //  Минимизирует css файлы
+const spritesmith  = require('gulp.spritesmith'); //Создает png спрайты
+const paths        = require('path'); // пути
+const replaceUrl   = require('gulp-css-replace-url'); // Замена url путей в css файлах
+const svgSprite    = require('gulp-svg-sprite'); // создание svg спрайтов
+const combiner     = require('stream-combiner2').obj; // нужен для обработки ошибок в тасках
+const filter       = require('gulp-filter'); // Пропускает через себя только определенные файлы
+const ignore       = require('gulp-ignore'); // Игнорирует определенные файлы
+const rigger       = require('gulp-rigger'); // можно импортировать куски кода при помощи конструкции //= footer.html
+const rename       = require('gulp-rename'); // изменяет имя файла .pipe(rename('vendor.min.js`))
+const cached       = require('gulp-cached'); // пропускает через себя файлы и файлы с одним и тем же именем и содержимым не пропускает
+const autoprefix   = require('gulp-autoprefixer'); // добавляет префиксы
+const newer        = require('gulp-newer');// сравнивает поступающие файлы с файлами в конечной директории
+const If           = require('gulp-if');
 
 /* IF - пропускает файлы через поток в зависимости от тех или иных условий
  может принимать функцию
