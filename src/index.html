@@ -2,13 +2,217 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Device</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-//= template/header.html
+//= template/main-header.html
 
+<main>
+  <section class="slider">
+    <ul class="slider_btn">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <section class="slide">
+      <img class="product-image" src="#" alt="Фотография селфи палки">
 
-//= template/footer.html
+      <div class="slide-description">
+        <h2 class="large-title slide-description__large-title">Делай селфи, <br> как Бэн Стиллер!</h2>
+        <p class="main-text slide-description__main-text">Самая длинная палка для селфи доступна в нашем магазине.
+          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+      </div>
+      <a class="btn" href="#">Подробнее</a>
+      <table class="table-parameters">
+        <tr class="table-parameters__row">
+          <td>8,5 м</td>
+          <td>5 кг</td>
+          <td>Карбон</td>
+        </tr>
+        <tr class="table-parameters__row">
+          <td>Длина палки</td>
+          <td>Вес палки</td>
+          <td>Материал</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="slide">
+      <img class="product-image" src="#" alt="Фотография часов">
+
+      <div class="slide-description">
+        <h2 class="large-title slide-description__large-title">Худеем <br> правильно!</h2>
+        <p class="main-text slide-description__main-text">Мотивирующие фитнес-браслеты помогут найти в себе силы
+          не пропускать занятия и соблюдать диету.</p>
+      </div>
+      <a class="btn" href="#">Подробнее</a>
+      <table class="table-parameters">
+        <tr class="table-parameters__row">
+          <td>48 часов</td>
+        </tr>
+        <tr class="table-parameters__row">
+          <td>без подзарядки</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="slide">
+      <img class="product-image" src="#" alt="Фотография квадрокоптера">
+
+      <div class="slide-description">
+        <h2 class="large-title slide-description__large-title">Пархает как бабочка, <br> жалит как пчела!</h2>
+        <p class="main-text slide-description__main-text">тот обычный, на первый взгляд, квадрокоптер оснащен
+          мощным лазером, замаскированным под стандартную камеру.</p>
+      </div>
+      <a class="btn" href="#">Подробнее</a>
+      <table class="table-parameters">
+        <tr class="table-parameters__row">
+          <td>800 м</td>
+          <td>50м</td>
+        </tr>
+        <tr class="table-parameters__row">
+          <td>Длительность полета</td>
+          <td>Радиус поражения</td>
+        </tr>
+      </table>
+    </section>
+
+  </section>
+
+  <section class="product categories">
+    <h2 class="g-hidden">Категории товаров</h2>
+    <ul class="product categories__list">
+      <li>
+        <a class="category-block" href="#">
+          <div class="category-block__img category-block__img--virtual"></div>
+
+          <h3 class="category-block__title">Виртуальная реальность</h3>
+        </a>
+      </li>
+      <li>
+        <a class="category-block" href="#">
+          <div class="category-block__img category-block__img--selfy"></div>
+
+          <h3 class="category-block__title">Моноподы для селфи</h3>
+        </a>
+      </li>
+      <li>
+        <a class="category-block" href="#">
+          <div class="category-block__img category-block__img--camera"></div>
+
+          <h3 class="category-block__title">Экшн-камеры</h3>
+        </a>
+      </li>
+      <li>
+        <a class="category-block" href="#">
+          <div class="category-block__img category-block__img--bracelet"></div>
+
+          <h3 class="category-block__title">Фитнес-браслеты</h3>
+        </a>
+      </li>
+      <li>
+        <a class="category-block" href="#">
+          <div class="category-block__img category-block__img--clock"></div>
+
+          <h3 class="category-block__title">Умные часы</h3>
+        </a>
+      </li>
+      <li>
+        <a class="category-block" href="#">
+          <div class="category-block__img category-block__img--quadro"></div>
+
+          <h3 class="category-block__title">Квадрокоптеры</h3>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="service">
+    <h2 class="g-hidden">Сервис</h2>
+    <ul class="service-list">
+      <li><a class="btn" href="#">Доставка</a></li>
+      <li><a class="btn" href="#">Гарантия</a></li>
+      <li><a class="btn" href="#">Кредит</a></li>
+    </ul>
+
+    <section class="service-description service-description--delivery">
+      <h2 class="large-title">Доставка</h2>
+      <p class="main-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+        неплохо заработаем, поднимая его на ваш этаж.
+      </p>
+    </section>
+
+    <section class="service-description service-description--guarantee">
+      <h2 class="large-title">Гарантия</h2>
+      <p class="main-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим
+        вам новый.
+        Товар, не дом, конечно же.
+      </p>
+    </section>
+
+    <section class="service-description service-description--credit">
+      <h2 class="large-title">Кредит</h2>
+      <p class="main-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+        условия кредита. Выгодные для нашего банка, разумеется.
+      </p>
+    </section>
+  </section>
+
+  <section class="brands">
+    <h2 class="g-hidden">Логотипы брэндов</h2>
+    <ul class="brands__list">
+      <li>
+        <a href="#">
+          <img class="brand-logo brand-logo--dji" src="#" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="brand-logo brand-logo--sp" src="#" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="brand-logo brand-logo--gopro" src="#" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="brand-logo brand-logo--vive" src="#" alt="">
+        </a>
+      </li>
+    </ul>
+
+  </section>
+
+  <section class="about-us">
+    <h2 class="large-title">О нас</h2>
+    <p class="main-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+    <p class="main-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+      транспортными компаниями:</p>
+
+    <ul class="partners-list">
+      <li class="partners-list__item">Деловые Линии</li>
+      <li class="partners-list__item">Автотрейдинг</li>
+      <li class="partners-list-__item">ЖелДорЭкспедиция</li>
+    </ul>
+
+    <a class="btn" href="#">Подробнее о нас</a>
+  </section>
+
+  <section class="contacts">
+    <h2 class="large-title">Контакты</h2>
+    <p class="main-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
+      бывает.</p>
+    <a href="#">Карта расположения</a>
+
+    <a class="btn" href="#">Подробнее о нас</a>
+  </section>
+</main>
+
+//= template/main-footer.html
+
+//= template/popup-message.html
 </body>
 </html>

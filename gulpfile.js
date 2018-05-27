@@ -19,7 +19,7 @@ const svgSprite   = require('gulp-svg-sprite'); // создание svg спра
 const combiner    = require('stream-combiner2').obj; // нужен для обработки ошибок в тасках
 const filter      = require('gulp-filter'); // Пропускает через себя только определенные файлы
 const ignore      = require('gulp-ignore'); // Игнорирует определенные файлы
-const rigger      = require('gulp-rigger'); // можно импортировать куски кода при помощи конструкции //= main-footer.html
+const rigger      = require('gulp-rigger'); // можно импортировать куски кода при помощи конструкции //= main-main-footer.html
 const rename      = require('gulp-rename'); // изменяет имя файла .pipe(rename('vendor.min.js`))
 const cached      = require('gulp-cached'); // пропускает через себя файлы и файлы с одним и тем же именем и содержимым не пропускает
 const autoprefix  = require('gulp-autoprefixer'); // добавляет префиксы
