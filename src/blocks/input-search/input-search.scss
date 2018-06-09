@@ -1,0 +1,36 @@
+.input-search {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 5px 5px 5px 40px;
+  background: transparent;
+  font: inherit;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 3px;
+    opacity: 1;
+
+  }
+
+  &:focus + .btn-search--hidden {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 4px 20px;
+    border: 2px solid #000000;
+    clip: unset;
+    overflow: visible;
+  }
+}

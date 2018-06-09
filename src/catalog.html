@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>Device</title>
-  <link rel="stylesheet" href="#">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-//= template/catalog-header.html
+@include('template/catalog-header.html')
 
 <main>
   <h1 class="page-title">Моноподы для селфи</h1>
@@ -169,7 +170,8 @@
  </section>
 </main>
 
-//= template/main-footer.html
-<script src="#"></script>
+@include('template/main-footer.html')
+
+<script src="js/main.js"></script>
 </body>
 </html>

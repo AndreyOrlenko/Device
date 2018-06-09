@@ -1,0 +1,13 @@
+%reset-ls {
+  list-style: none;
+}
+
+%reset-mp {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font ($name, $weight){
+  font-family: $name, "Times New Roman", sans-serif;
+  font-weight: $weight;
+}

@@ -1,0 +1,7 @@
+.title-middle {
+  @extend %reset-mp;
+  @include font("Gilroy", 800);
+  color: inherit;
+  font-size: 47px;
+  line-height: 56px;
+}

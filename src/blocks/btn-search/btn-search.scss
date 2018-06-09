@@ -1,0 +1,48 @@
+.btn-search {
+  font: inherit;
+  padding: 4px 20px;
+  border: 2px solid #000000;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  
+  &:hover,&:focus {
+    background: #000000;
+    color: $color-text-second;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 4px 20px;
+    border: 2px solid #000000;
+    clip: unset;
+    overflow: visible;
+
+  }
+
+  &:active {
+    background: #000000;
+    color: rgba(255, 255, 255, 0.3);
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 4px 20px;
+    border: 2px solid #000000;
+    clip: unset;
+    overflow: visible;
+
+  }
+
+
+  &--hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}

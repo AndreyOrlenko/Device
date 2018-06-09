@@ -1,0 +1,21 @@
+.form-search {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  width: 440px;
+  line-height: 36px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    background: transparent url("search.svg") no-repeat center center;
+  }
+
+  &:focus {
+
+  }
+}

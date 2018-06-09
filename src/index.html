@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Device</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-//= template/main-header.html
+<body class="page-main">
+
+@include('template/main-header.html')
 
 <main>
   <section class="slider">
@@ -210,9 +212,10 @@
     <a class="btn" href="#">Подробнее о нас</a>
   </section>
 </main>
+@include('template/main-footer.html')
 
-//= template/main-footer.html
+@include('template/popup-message.html')
 
-//= template/popup-message.html
+<script src="js/main.js"></script>
 </body>
 </html>

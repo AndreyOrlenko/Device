@@ -1,0 +1,14 @@
+.header-main {
+  background: $color-yellow;
+
+
+  &__logo-main {
+    top: -18px;
+    margin-left: 60px;
+    margin-bottom: 18px;
+  }
+
+  &__form-search {
+    margin-left: 60px;
+  }
+}

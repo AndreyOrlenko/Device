@@ -1,3 +1,17 @@
-//@import (reference) "../blocks/sprites/spritepng"; // reference использует этот файл, но не выводит его
-//@import (reference) "../blocks/sprites/spritesvg";// использует этот файл, но не выводит его
+@import "../blocks/_custom/variables.scss";
+@import "../blocks/_custom/mixins.scss";
+@import "../blocks/_custom/fonts.scss" ;
+@import "../blocks/_custom/style-optimization.scss";
+@import "../blocks/_custom/g-hidden.scss";
+
+@import "../blocks/container/container.scss";
+@import "../blocks/title-middle/title-middle.scss";
+@import "../blocks/logo-main/logo-main.scss";
+
+@import "../blocks/page-main/page-main.scss";
+
+@import "../blocks/header-main/header-main.scss";
+@import "../blocks/form-search/form-search.scss";
+@import "../blocks/input-search/input-search.scss";
+@import "../blocks/btn-search/btn-search.scss";
 

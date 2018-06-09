@@ -1,0 +1,9 @@
+.page-main {
+  @extend %reset-mp;
+  padding-top: 40px;
+  @include font("OpenSans", 300);
+  font-size: 15px;
+  line-height: 30px;
+  background: #ffffff;
+  color: $color-text-main;
+}
