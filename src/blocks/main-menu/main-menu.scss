@@ -1,0 +1,138 @@
+.main-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  @extend %reset-mp;
+  @extend %reset-ls;
+
+  @include font("Gilroy", 800);
+  font-size: 18px;
+  line-height: 30px;
+
+  &__item {
+    position: relative;
+    &--catalog {
+      margin-right: auto;
+      &:hover, &:focus {
+        .main-menu__sub-list {
+          left: -60px;
+          z-index: 10;
+          padding: 0 500px 52px 60px;
+          width: 600px;
+          height: auto;
+          margin: 0px;
+          clip: unset;
+          overflow: visible;
+        }
+      }
+    }
+    &--margin-40 {
+      margin-right: 40px;
+    }
+    &--margin-112 {
+      margin-right: 112px;
+    }
+  }
+
+  &__link {
+    display: block;
+    font: inherit;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $color-text-main;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:focus + .main-menu__sub-list {
+      left: -60px;
+      z-index: 10;
+      padding: 0 500px 52px 60px;
+      width: 600px;
+      height: auto;
+      margin: 0px;
+      clip: unset;
+      overflow: visible;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+    &--catalog {
+      padding-right: 32px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 7px;
+        width: 2px;
+        height: 16px;
+        margin-top: -8px;
+        background-color: #b8a974;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 7px;
+        width: 2px;
+        height: 16px;
+        margin-top: -8px;
+        background-color: #b8a974;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__sub-list {
+    @extend %reset-mp;
+    @extend %reset-ls;
+    position: absolute;
+    @include font("OpenSans", 300);
+    font-size: 15px;
+    line-height: 36px;
+    background: $color-yellow;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    &--visible {
+      left: -60px;
+      z-index: 10;
+      padding: 0 500px 52px 60px;
+      width: 600px;
+      height: auto;
+      margin: 0px;
+      clip: unset;
+      overflow: visible;
+    }
+  }
+
+  &__sub-item {
+    display: inline-block;
+    &--last {
+      display: block;
+    }
+    &--margin-60 {
+      margin-right: 60px;
+    }
+    &--margin-78 {
+      margin-right: 78px;
+    }
+    &--margin-87 {
+      margin-right: 87px;
+    }
+  }
+
+  &__sub-link {
+    display: block;
+    color: $color-text-main;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

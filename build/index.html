@@ -14,39 +14,41 @@
     <img class="logo-main__img" src="img/logo-black.png" alt="">
   </a>
 
+  <div class="wrapper-user-block header-main__wrapper-user-block">
   <form class="form-search header-main__form-search" action="#" method="get">
     <input class="input-search" type="text" placeholder="Поиск по сайту">
     <button class="btn-search btn-search--hidden" type="submit">Найти</button>
   </form>
 
   <ul class="user-navigation">
-    <li><a class="user-block__item user-block__item--login" href="#">Войти</a></li>
-    <li><a class="user-block__item user-block__item--compare" href="#">Сравнить</a></li>
-    <li><a class="user-block__item user-block__item--basket" href="#">Корзина</a></li>
+    <li><a class="user-navigation__item user-navigation__item--login" href="#">Войти</a></li>
+    <li><a class="user-navigation__item user-navigation__item--compare" href="#">Сравнить</a></li>
+    <li><a class="user-navigation__item user-navigation__item--cart" href="#">Корзина</a></li>
   </ul>
+  </div>
 
 
   <nav class="main-navigation">
     <ul class="main-menu">
-      <li class="main-menu__item">
-        <a class="main-menu__link main-menu__link--cotolog" href="#">
+      <li class="main-menu__item main-menu__item--catalog">
+        <a class="main-menu__link main-menu__link--catalog" href="#">
           Каталог товаров
         </a>
-        <ul class="sub-menu">
-          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Виртуальная реальность</a></li>
-          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Фитнес-браслеты</a></li>
-          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Квадрокоптеры</a></li>
-          <li class="sub-menu__item"><a class="sub-menu__link" href="catalog.html">Моноподы для селфи</a></li>
-          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Умные часы</a></li>
-          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Экшн-камеры</a></li>
+        <ul class="main-menu__sub-list">
+          <li class="main-menu__sub-item main-menu__sub-item--margin-60"><a class="main-menu__sub-link" href="#">Виртуальная реальность</a></li>
+          <li class="main-menu__sub-item main-menu__sub-item--margin-78"><a class="main-menu__sub-link" href="#">Фитнес-браслеты</a></li>
+          <li class="main-menu__sub-item"><a class="main-menu__sub-link" href="#">Квадрокоптеры</a></li>
+          <li class="main-menu__sub-item main-menu__sub-item--margin-87"><a class="main-menu__sub-link" href="catalog.html">Моноподы для селфи</a></li>
+          <li class="main-menu__sub-item"><a class="main-menu__sub-link" href="#">Умные часы</a></li>
+          <li class="main-menu__sub-item main-menu__sub-item--last"><a class="main-menu__sub-link" href="#">Экшн-камеры</a></li>
         </ul>
       </li>
-      <li class="main-menu__item">
+      <li class="main-menu__item main-menu__item--margin-40">
         <a class="main-menu__link" href="#">
           Доствака
         </a>
       </li>
-      <li class="main-menu__item">
+      <li class="main-menu__item main-menu__item--margin-112">
         <a class="main-menu__link" href="#">
           Гарантия
         </a>
@@ -62,124 +64,135 @@
 </div>
 
 <main>
-  <section class="slider">
-    <ul class="slider_btn">
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <section class="slide">
-      <img class="product-image" src="#" alt="Фотография селфи палки">
-
-      <div class="slide-description">
-        <h2 class="large-title slide-description__large-title">Делай селфи, <br> как Бэн Стиллер!</h2>
-        <p class="main-text slide-description__main-text">Самая длинная палка для селфи доступна в нашем магазине.
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+  <div class="container">
+    <section class="slider-main">
+      <h2 class="g-hidden">Слайдер</h2>
+      <div class="dots-slider">
+        <button class="dots-slider__item dots-slider__item--active"><span class="g-hidden">Слайд1</span></button>
+        <button class="dots-slider__item"><span class="g-hidden">Слайд2</span></button>
+        <button class="dots-slider__item"><span class="g-hidden">Слайд3</span></button>
       </div>
-      <a class="btn" href="#">Подробнее</a>
-      <table class="table-parameters">
-        <tr class="table-parameters__row">
-          <td>8,5 м</td>
-          <td>5 кг</td>
-          <td>Карбон</td>
-        </tr>
-        <tr class="table-parameters__row">
-          <td>Длина палки</td>
-          <td>Вес палки</td>
-          <td>Материал</td>
-        </tr>
-      </table>
+      <section class="slide slide--visible">
+        <img class="img-product img-product--mragin-left-90" src="img/slide-1.png" width="382" height="483"
+             alt="Фотография селфи палки">
+
+        <div class="slide__description">
+          <span class="slide__number">01</span>
+          <h2 class="title-middle slide__title-middle">Делай селфи, <br> как Бэн Стиллер!</h2>
+          <p class="slide__text">Самая длинная палка для селфи доступна в нашем магазине. <br>
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+          <a class="btn slide__btn btn--padding-44" href="#">Подробнее</a>
+
+          <table class="table-parameters">
+            <tr class="table-parameters__row-one">
+              <td class="table-parameters__td table-parameters__td--paddind-10">8,5 м</td>
+              <td class="table-parameters__td table-parameters__td--width-134 table-parameters__td--paddind-10">5 кг</td>
+              <td class="table-parameters__td table-parameters__td--paddind-10">Карбон</td>
+            </tr>
+            <tr class="table-parameters__row-two">
+              <td class="table-parameters__td">Длина палки</td>
+              <td class="table-parameters__td table-parameters__td--width-134">Вес палки</td>
+              <td class="table-parameters__td">Материал</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="slide ">
+        <img class="img-product img-product--mragin-left-115" width="346" height="487" src="img/slide-2.png" alt="Фотография часов">
+
+        <div class="slide__description">
+          <span class="slide__number">02</span>
+          <h2 class="title-middle slide__title-middle">Худеем <br> правильно!</h2>
+          <p class="slide__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
+            не пропускать занятия и соблюдать диету.</p>
+
+          <a class="btn slide__btn btn--padding-44" href="#">Подробнее</a>
+          <table class="table-parameters">
+            <tr class="table-parameters__row-one">
+              <td class="table-parameters__td table-parameters__td--paddind-10"">48 часов</td>
+            </tr>
+            <tr class="table-parameters__row-two">
+              <td class="table-parameters__td">без подзарядки</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="slide">
+        <img class="img-product img-product--mragin-left-30" src="img/slide-3.png" alt="Фотография квадрокоптера">
+
+        <div class="slide__description">
+          <span class="slide__number">03</span>
+          <h2 class="title-middle slide__title-middle">Пархает как бабочка, <br> жалит как пчела!</h2>
+          <p class="slide__text">тот обычный, на первый взгляд, квадрокоптер оснащен
+            мощным лазером, замаскированным под стандартную камеру.</p>
+
+          <a class="btn slide__btn btn--padding-44" href="#">Подробнее</a>
+          <table class="table-parameters">
+            <tr class="table-parameters__row-one">
+              <td class="table-parameters__td table-parameters__td--paddind-10"">800 м</td>
+              <td class="table-parameters__td table-parameters__td--paddind-10"">50м</td>
+            </tr>
+            <tr class="table-parameters__row-two">
+              <td class="table-parameters__td">Длительность полета</td>
+              <td class="table-parameters__td">Радиус поражения</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
     </section>
 
-    <section class="slide">
-      <img class="product-image" src="#" alt="Фотография часов">
+    <section class="product categories">
+      <h2 class="g-hidden">Категории товаров</h2>
+      <ul class="product categories__list">
+        <li>
+          <a class="category-block" href="#">
+            <div class="category-block__img category-block__img--virtual"></div>
 
-      <div class="slide-description">
-        <h2 class="large-title slide-description__large-title">Худеем <br> правильно!</h2>
-        <p class="main-text slide-description__main-text">Мотивирующие фитнес-браслеты помогут найти в себе силы
-          не пропускать занятия и соблюдать диету.</p>
-      </div>
-      <a class="btn" href="#">Подробнее</a>
-      <table class="table-parameters">
-        <tr class="table-parameters__row">
-          <td>48 часов</td>
-        </tr>
-        <tr class="table-parameters__row">
-          <td>без подзарядки</td>
-        </tr>
-      </table>
+            <h3 class="category-block__title">Виртуальная реальность</h3>
+          </a>
+        </li>
+        <li>
+          <a class="category-block" href="#">
+            <div class="category-block__img category-block__img--selfy"></div>
+
+            <h3 class="category-block__title">Моноподы для селфи</h3>
+          </a>
+        </li>
+        <li>
+          <a class="category-block" href="#">
+            <div class="category-block__img category-block__img--camera"></div>
+
+            <h3 class="category-block__title">Экшн-камеры</h3>
+          </a>
+        </li>
+        <li>
+          <a class="category-block" href="#">
+            <div class="category-block__img category-block__img--bracelet"></div>
+
+            <h3 class="category-block__title">Фитнес-браслеты</h3>
+          </a>
+        </li>
+        <li>
+          <a class="category-block" href="#">
+            <div class="category-block__img category-block__img--clock"></div>
+
+            <h3 class="category-block__title">Умные часы</h3>
+          </a>
+        </li>
+        <li>
+          <a class="category-block" href="#">
+            <div class="category-block__img category-block__img--quadro"></div>
+
+            <h3 class="category-block__title">Квадрокоптеры</h3>
+          </a>
+        </li>
+      </ul>
     </section>
-
-    <section class="slide">
-      <img class="product-image" src="#" alt="Фотография квадрокоптера">
-
-      <div class="slide-description">
-        <h2 class="large-title slide-description__large-title">Пархает как бабочка, <br> жалит как пчела!</h2>
-        <p class="main-text slide-description__main-text">тот обычный, на первый взгляд, квадрокоптер оснащен
-          мощным лазером, замаскированным под стандартную камеру.</p>
-      </div>
-      <a class="btn" href="#">Подробнее</a>
-      <table class="table-parameters">
-        <tr class="table-parameters__row">
-          <td>800 м</td>
-          <td>50м</td>
-        </tr>
-        <tr class="table-parameters__row">
-          <td>Длительность полета</td>
-          <td>Радиус поражения</td>
-        </tr>
-      </table>
-    </section>
-
-  </section>
-
-  <section class="product categories">
-    <h2 class="g-hidden">Категории товаров</h2>
-    <ul class="product categories__list">
-      <li>
-        <a class="category-block" href="#">
-          <div class="category-block__img category-block__img--virtual"></div>
-
-          <h3 class="category-block__title">Виртуальная реальность</h3>
-        </a>
-      </li>
-      <li>
-        <a class="category-block" href="#">
-          <div class="category-block__img category-block__img--selfy"></div>
-
-          <h3 class="category-block__title">Моноподы для селфи</h3>
-        </a>
-      </li>
-      <li>
-        <a class="category-block" href="#">
-          <div class="category-block__img category-block__img--camera"></div>
-
-          <h3 class="category-block__title">Экшн-камеры</h3>
-        </a>
-      </li>
-      <li>
-        <a class="category-block" href="#">
-          <div class="category-block__img category-block__img--bracelet"></div>
-
-          <h3 class="category-block__title">Фитнес-браслеты</h3>
-        </a>
-      </li>
-      <li>
-        <a class="category-block" href="#">
-          <div class="category-block__img category-block__img--clock"></div>
-
-          <h3 class="category-block__title">Умные часы</h3>
-        </a>
-      </li>
-      <li>
-        <a class="category-block" href="#">
-          <div class="category-block__img category-block__img--quadro"></div>
-
-          <h3 class="category-block__title">Квадрокоптеры</h3>
-        </a>
-      </li>
-    </ul>
-  </section>
+  </div>
 
   <section class="service">
     <h2 class="g-hidden">Сервис</h2>
@@ -256,7 +269,8 @@
 
   <section class="contacts">
     <h2 class="large-title">Контакты</h2>
-    <p class="main-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое
+    <p class="main-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
+      покупки. Всякое
       бывает.</p>
     <a href="#">Карта расположения</a>
 

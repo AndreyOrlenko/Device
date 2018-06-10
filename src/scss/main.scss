@@ -2,16 +2,29 @@
 @import "../blocks/_custom/mixins.scss";
 @import "../blocks/_custom/fonts.scss" ;
 @import "../blocks/_custom/style-optimization.scss";
+@import "../blocks/_custom/keyframes.scss";
 @import "../blocks/_custom/g-hidden.scss";
 
 @import "../blocks/container/container.scss";
 @import "../blocks/title-middle/title-middle.scss";
 @import "../blocks/logo-main/logo-main.scss";
+@import "../blocks/btn/btn.scss";
 
 @import "../blocks/page-main/page-main.scss";
 
+//index header
 @import "../blocks/header-main/header-main.scss";
 @import "../blocks/form-search/form-search.scss";
 @import "../blocks/input-search/input-search.scss";
 @import "../blocks/btn-search/btn-search.scss";
+@import "../blocks/wrapper-user-block/wrapper-user-block.scss";
+@import "../blocks/user-navigation/user-navigation.scss";
+@import "../blocks/main-navigation/main-navigation.scss";
+@import "../blocks/main-menu/main-menu.scss";
 
+//index main
+@import "../blocks/slider-main/slider-main.scss";
+@import "../blocks/dots-slider/dots-slider.scss";
+@import "../blocks/slide/slide.scss";
+@import "../blocks/img-product/img-product.scss";
+@import "../blocks/table-parameters/table-parameters.scss";

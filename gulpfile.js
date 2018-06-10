@@ -142,8 +142,8 @@ gulp.task('scss:build', function () {
       If(!isDevelopment, postcss([autoprefixer({browsers: [' cover 99.5% ']}), cssnano()])),
 
       cached('scss'),
-      gulp.dest(path.build.css)
-      // browserSync.reload({stream: true})//И перезагрузим наш сервер для обновлений
+      gulp.dest(path.build.css),
+      browserSync.reload({stream: true})
   ).on('error', notify.onError());
 
 });
@@ -159,7 +159,7 @@ gulp.task('css:build', function () {
       cached('css'),
       debug(),
       gulp.dest(path.build.css),
-      // browserSync.reload({stream: true})//И перезагрузим наш сервер для обновлений
+      browserSync.reload({stream: true})
   ).on('error', notify.onError());
 });
 
@@ -179,8 +179,8 @@ gulp.task('js:build', function () {
       })),
       If(!isDevelopment, uglify()),
       cached('js'),
-      gulp.dest(path.build.js)
-      // browserSync.reload({stream: true})//И перезагрузим наш сервер для обновлений
+      gulp.dest(path.build.js),
+      browserSync.reload({stream: true})
   ).on('error', notify.onError());
 });
 //---------------------------js-task--------------------------------------
@@ -198,7 +198,7 @@ gulp.task('jsOther:build', function () {
       cached('jsAll'),
       debug({title: 'cached'}),
       gulp.dest(path.build.js),
-      // browserSync.reload({stream: true})//И перезагрузим наш сервер для обновлений
+      browserSync.reload({stream: true})
   ).on('error', notify.onError());
 });
 
@@ -221,7 +221,7 @@ gulp.task('html:build', function () {
       fileinclude({prefix: '@'}),
       cached('html'),
       gulp.dest(path.build.html),
-      // browserSync.reload({stream: true}) //И перезагрузим наш сервер для обновлений
+      browserSync.reload({stream: true})
   ).on('error', notify.onError());
 });
 //--------------------------------html-task-----------------------------------------
@@ -233,8 +233,8 @@ gulp.task('fonts:build', function () {
   return combiner(
       gulp.src(path.src.fonts),
       cached('fonts'),
-      gulp.dest(path.build.fonts)
-      //browserSync.reload({stream: true}) //И перезагрузим наш сервер для обновлений
+      gulp.dest(path.build.fonts),
+      browserSync.reload({stream: true})
   ).on('error', notify.onError());
 });
 //-------------------------------fonts-task------------------------------------------
@@ -270,8 +270,8 @@ gulp.task('image:build', function () {
         use: [pngquant()],
         interlaced: true
       }),
-      gulp.dest(path.build.img)
-      // .pipe(browserSync.reload({stream: true}));//И перезагрузим наш сервер для обновлений
+      gulp.dest(path.build.img),
+      browserSync.reload({stream: true})
   ).on('error', notify.onError());
 });
 //-------------------------------img-task------------------------------------------

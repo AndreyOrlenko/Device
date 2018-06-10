@@ -1,14 +1,16 @@
 .header-main {
+  min-height: 180px;
   background: $color-yellow;
+  padding: 0 60px 120px 60px;
 
 
   &__logo-main {
     top: -18px;
-    margin-left: 60px;
-    margin-bottom: 18px;
+    margin-bottom: -10px;
   }
 
-  &__form-search {
-    margin-left: 60px;
+
+  &__wrapper-user-block {
+    margin-bottom: 27px;
   }
 }

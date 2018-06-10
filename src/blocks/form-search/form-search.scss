@@ -1,6 +1,7 @@
 .form-search {
   display: flex;
   justify-content: flex-start;
+  flex-shrink: 0;
   position: relative;
   width: 440px;
   line-height: 36px;

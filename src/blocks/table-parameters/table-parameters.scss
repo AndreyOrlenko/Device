@@ -1,0 +1,33 @@
+.table-parameters {
+  border: none;
+  border-collapse: collapse;
+  vertical-align: central;
+  border-spacing: unset;
+
+  &__row-one {
+    @include font("Gilroy", 300);
+    font-size: 36px;
+    line-height: 42px;
+
+  }
+
+  &__row-two {
+    @include font("OpenSans", 300);
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &__td {
+    width: 160px;
+
+    &--width-134 {
+      width: 134px;
+    }
+
+    &--paddind-10 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+}

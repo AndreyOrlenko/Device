@@ -1,0 +1,39 @@
+.user-navigation {
+  @extend %reset-mp;
+  @extend %reset-ls;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  line-height: 36px;
+
+
+  &__item {
+    display: block;
+    padding: 6px 0 6px 27px;
+    margin-right: 40px;
+    font: inherit;
+    color: $color-text-main;
+
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--login {
+      background: url("user.svg") no-repeat left center;
+      margin-right: 209px;
+    }
+
+    &--compare {
+      background: url("compare.svg") no-repeat left center;
+
+    }
+
+    &--cart {
+      background: url("cart.svg") no-repeat left center;
+      margin-right: 0px;
+    }
+  }
+}
