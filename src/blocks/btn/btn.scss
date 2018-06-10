@@ -1,12 +1,20 @@
 .btn {
+  box-sizing: border-box;
   display: inline-block;
   position: relative;
+  z-index: 1;
+  border: none;
   @include font("Gilroy", 800);
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: $color-text-main;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 
   &::before {
     content: '';
@@ -20,7 +28,7 @@
     background: $color-orange-main;
   }
 
-  &:hover {
+  &:hover, &:focus {
     &::before {
       top: 0;
       bottom: 0;
@@ -48,7 +56,61 @@
     }
   }
 
-  &--padding-44 {
-    padding: 5px 44px;
+  &--width-220 {
+    min-width: 220px;
+    padding: 5px 10px;
   }
+
+  &--width-160 {
+    min-width: 160px;
+    padding: 5px 10px;
+  }
+
+  &--black-bg {
+
+    &:active {
+      color: $color-yellow;
+      &::before {
+        left: 0px;
+        right: -125px;
+        top: 0px;
+        bottom: 0px;
+        z-index: -1;
+        height: auto;
+        margin-top: 0px;
+        background: #000000;
+      }
+    }
+  }
+
+  &--active {
+    color: $color-yellow;
+
+    &::before {
+      left: 0px;
+      right: -125px;
+      top: 0px;
+      bottom: 0px;
+      z-index: -1;
+      height: auto;
+      margin-top: 0px;
+      background: #000000;
+    }
+
+    &:hover, &:focus {
+      &::before {
+        left: 0px;
+        right: -125px;
+        top: 0px;
+        bottom: 0px;
+        z-index: -1;
+        height: auto;
+        margin-top: 0px;
+        background: #000000;
+      }
+
+    }
+  }
+
+
 }

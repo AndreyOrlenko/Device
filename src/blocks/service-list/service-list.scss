@@ -1,0 +1,21 @@
+.service-list {
+  @extend %reset-mp;
+  @extend %reset-ls;
+  position: relative;
+  top: -20px;
+  width: 285px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: 0;
+    width: 7px;
+    height: 319px;
+    background: #000000;
+  }
+
+  &__btn {
+    margin-bottom: 25px;
+  }
+}

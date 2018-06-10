@@ -1,0 +1,33 @@
+.service-description {
+  display: none;
+  position: relative;
+  top: -32px;
+  width: 455px;
+  padding: 0 300px 0 0;
+
+  &__title-middle {
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    @extend  %reset-mp;
+  }
+
+  &--delivery {
+    background: url("delivery.svg") no-repeat 556px 15px;
+    background-size: 134px 166px;
+
+  }
+
+  &--guarantee {
+
+  }
+
+  &--credit {
+    
+  }
+
+  &--visible {
+    display: block;
+  }
+}

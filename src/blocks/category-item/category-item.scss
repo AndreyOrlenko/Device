@@ -1,0 +1,38 @@
+.category-item {
+  display: block;
+  width: 160px;
+
+  &:hover &__img{
+    background: $color-orange-main;
+  }
+  &:active &__img{
+    background: $color-orange-main;
+  }
+  &:active &__icon, &:active &__title{
+    opacity: 0.3;
+  }
+
+
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+    margin-bottom: 33px;
+    background: $color-yellow;
+
+
+
+    &--align-item-end {
+      align-items: flex-end;
+    }
+  }
+
+  &__title {
+    @extend %reset-mp;
+    font: inherit;
+    color: $color-text-main;
+  }
+
+}

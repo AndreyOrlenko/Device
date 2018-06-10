@@ -31,13 +31,5 @@ dots.forEach(function (item, i, subLinks) {
         }
       }
     })
-
-
-    // if(!item.classList.contains('dots-slider__item--active')) {
-    //   item.classList.add('dots-slider__item--active');
-    // }
   })
-  // item.addEventListener('blur', function () {
-  //   subList.classList.remove('main-menu__sub-list--visible');
-  // });
 });
