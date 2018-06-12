@@ -1,6 +1,11 @@
 .logo-main {
-  display: block;
+  display: inline-block;
   position: relative;
+
+  &__img {
+    display: block;
+  }
+
   &--active {
 
     &:hover {
@@ -9,9 +14,6 @@
 
     &:active {
       opacity: 0.3;
-    }
-    &__img {
-      display: block;
     }
   }
 

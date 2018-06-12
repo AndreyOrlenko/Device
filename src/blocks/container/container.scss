@@ -3,10 +3,25 @@
   padding: 0 20px;
   margin: 0 auto;
 
-  &--flex {
+  &--flex-sb {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  &--flex-fs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &--flex-stretch {
+    align-items: stretch;
+  }
+
+  &--flex-no-wrap {
+    flex-wrap: nowrap;
   }
 }
 

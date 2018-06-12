@@ -1,0 +1,19 @@
+.left {
+  position: relative;
+  width: 210px;
+  min-height: 178px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 7px;
+    background: $color-orange-main;
+  }
+
+  &__logo-main {
+    margin-bottom: 30px;
+  }
+}

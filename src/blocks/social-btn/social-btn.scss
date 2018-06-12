@@ -1,0 +1,23 @@
+.social-btn {
+  display: block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--fb {
+    background: url("fb.svg") no-repeat center center;
+  }
+  &--insta {
+    background: url("insta.svg") no-repeat center center;
+  }
+  &--twitter {
+    background: url("twitter.svg") no-repeat center center;
+  }
+}

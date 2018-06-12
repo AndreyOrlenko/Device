@@ -1,0 +1,15 @@
+.brands {
+
+
+  &__list {
+    @extend %reset-mp;
+    @extend %reset-ls;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    display: block;
+  }
+}

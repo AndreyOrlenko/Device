@@ -55,14 +55,23 @@
       margin-top: 0px;
     }
   }
+  &--width-160 {
+    min-width: 160px;
+    padding: 5px 10px;
+  }
+
+  &--width-200 {
+    min-width: 200px;
+    padding: 5px 10px;
+  }
 
   &--width-220 {
     min-width: 220px;
     padding: 5px 10px;
   }
 
-  &--width-160 {
-    min-width: 160px;
+  &--width-260 {
+    min-width: 260px;
     padding: 5px 10px;
   }
 
@@ -111,6 +120,8 @@
 
     }
   }
+  &--contacts-js {
 
+  }
 
 }

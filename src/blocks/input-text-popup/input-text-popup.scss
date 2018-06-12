@@ -1,0 +1,27 @@
+.input-text-popup {
+  box-sizing: border-box;
+  padding: 16px 20px 16px 20px;
+  @include font("OpenSans", 400);
+  font-size: 14px;
+  line-height: 18px;
+  border: 2px solid transparent;
+  @include bg-input-grey(0.5);
+  outline: none;
+  transition: background-color linear 100ms;
+  &:hover {
+    @include bg-input-grey(0.8);
+  }
+  &:focus {
+    background: transparent;
+    border: 2px solid rgba($color-orange-main, 0.5);
+  }
+
+  &--width-100 {
+    width: 100%;
+  }
+
+  &--error {
+    background: rgba(237,181,181,0.5);
+    transition: background-color linear 100ms;
+  }
+}

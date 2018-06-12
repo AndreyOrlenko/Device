@@ -1,21 +1,24 @@
+<div class="popup-overlay">
 <section class="popup-message">
-  <form class="popup-form" action="#" method="post">
-    <p>
-    <label class="popup-input__label" for="name">Ваше имя:</label>
-    <input class="popup-input" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
+  <h2 class="g-hidden">Форма отправки сообщения</h2>
+  <form class="form-popup" action="#" method="post">
+    <p class="form-popup__item form-popup__item--width-360px">
+    <label class="form-popup__label " for="name">Ваше имя:</label>
+    <input class="input-text-popup input-text-popup--width-100" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
     </p>
-    <p>
-      <label class="popup-input__label" for="email">Ваш e-mail:</label>
-      <input class="popup-input" type="email" name="email" id="email" placeholder="Дляотправки ответа">
-    </p>
-
-    <p>
-    <label class="popup-input__label" for="text">Текст письма:</label>
-    <textarea class="popup-input" name="text" id="text" cols="30" rows="10">В свободной форме</textarea>
+    <p class="form-popup__item form-popup__item--width-360px">
+      <label class="form-popup__label" for="email">Ваш e-mail:</label>
+      <input class="input-text-popup input-text-popup--width-100" type="email" name="email" id="email" placeholder="Для отправки ответа">
     </p>
 
-    <button class="btn" type="submit">Отправить</button>
+    <p class="form-popup__item form-popup__item--width-100">
+    <label class="form-popup__label" for="text">Текст письма:</label>
+    <textarea class="input-text-popup input-text-popup--width-100" name="text" id="text" cols="30" rows="7" placeholder="В свободной форме"></textarea>
+    </p>
+
+    <button class="btn form-popup__btn btn--width-200" type="submit">Отправить</button>
   </form>
 
-  <span class="popup-close"></span>
+  <button class="popup-close"><span class="g-hidden">Закрыть</span></button>
 </section>
+</div>

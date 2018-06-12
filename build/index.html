@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta charset="UTF-8">
   <title>Device</title>
   <link rel="stylesheet" href="css/normalize.css">
@@ -11,7 +12,7 @@
 <div class="container">
 <header class="header-main">
   <a class="logo-main header-main__logo-main">
-    <img class="logo-main__img" src="img/logo-black.png" alt="">
+    <img class="logo-main__img" src="img/logo-black.png" alt="DEVICE">
   </a>
 
   <div class="wrapper-user-block header-main__wrapper-user-block">
@@ -21,9 +22,15 @@
   </form>
 
   <ul class="user-navigation">
-    <li><a class="user-navigation__item user-navigation__item--login" href="#">Войти</a></li>
-    <li><a class="user-navigation__item user-navigation__item--compare" href="#">Сравнить</a></li>
-    <li><a class="user-navigation__item user-navigation__item--cart" href="#">Корзина</a></li>
+    <li class="user-navigation__item user-navigation__item--mr-210">
+      <a class="user-navigation__link  user-navigation__link--login" href="#">Войти</a>
+    </li>
+    <li class="user-navigation__item">
+      <a class="user-navigation__link user-navigation__link--compare" href="#">Сравнить</a>
+    </li>
+    <li class="user-navigation__item">
+      <a class="user-navigation__link user-navigation__link--cart" href="#">Корзина</a>
+    </li>
   </ul>
   </div>
 
@@ -43,7 +50,7 @@
           <li class="main-menu__sub-item main-menu__sub-item--last"><a class="main-menu__sub-link" href="#">Экшн-камеры</a></li>
         </ul>
       </li>
-      <li class="main-menu__item main-menu__item--margin-40">
+      <li class="main-menu__item">
         <a class="main-menu__link" href="#">
           Доствака
         </a>
@@ -123,7 +130,8 @@
       </section>
 
       <section class="slide">
-        <img class="img-product img-product--mragin-left-30" src="img/slide-3.png" alt="Фотография квадрокоптера">
+        <img class="img-productslide img-product--mragin-left-30 img-product--margin-top-66" src="img/slide-3.png"
+             alt="Фотография квадрокоптера">
 
         <div class="slide__description">
           <span class="slide__number">03</span>
@@ -135,7 +143,7 @@
           <table class="table-parameters">
             <tr class="table-parameters__row-one">
               <td class="table-parameters__td table-parameters__td--paddind-10">800 м</td>
-              <td class="table-parameters__td table-parameters__td--paddind-10">50м</td>
+              <td class="table-parameters__td table-parameters__td--paddind-10">50 м</td>
             </tr>
             <tr class="table-parameters__row-two">
               <td class="table-parameters__td">Длительность полета</td>
@@ -208,25 +216,33 @@
     </section>
   </div>
 
-  <section class="service">
-    <div class="container container--flex">
+  <section class="service page-main__service">
+    <div class="container container--flex-sb">
       <h2 class="g-hidden">Сервис</h2>
       <ul class="service-list">
-        <li><button class="btn service-list__btn btn--width-160 btn--black-bg btn--active" href="#">Доставка</button></li>
-        <li><button class="btn service-list__btn btn--width-160 btn--black-bg" href="#">Гарантия</button></li>
-        <li><button class="btn service-list__btn btn--width-160 btn--black-bg" href="#">Кредит</button></li>
+        <li>
+          <button class="btn service-list__btn btn--width-160 btn--black-bg btn--active" href="#">Доставка</button>
+        </li>
+        <li>
+          <button class="btn service-list__btn btn--width-160 btn--black-bg" href="#">Гарантия</button>
+        </li>
+        <li>
+          <button class="btn service-list__btn btn--width-160 btn--black-bg" href="#">Кредит</button>
+        </li>
       </ul>
 
       <section class="service-description service-description--delivery service-description--visible">
         <h2 class="title-middle service-description__title-middle">Доставка</h2>
-        <p class="service-description__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+        <p class="service-description__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+          бесплатно! Ведь мы
           неплохо заработаем, поднимая его на ваш этаж.
         </p>
       </section>
 
       <section class="service-description service-description--guarantee">
         <h2 class="title-middle service-description__title-middle">Гарантия</h2>
-        <p class="service-description__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим
+        <p class="service-description__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+          переживайте, мы выдадим
           вам новый.
           Товар, не дом, конечно же.
         </p>
@@ -234,7 +250,8 @@
 
       <section class="service-description service-description--credit">
         <h2 class="title-middle service-description__title-middle">Кредит</h2>
-        <p class="service-description__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
+        <p class="service-description__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+          наиболее
           выгодные
           условия кредита. Выгодные для нашего банка, разумеется.
         </p>
@@ -242,122 +259,144 @@
     </div>
   </section>
 
-  <section class="brands">
-    <h2 class="g-hidden">Логотипы брэндов</h2>
-    <ul class="brands__list">
-      <li>
-        <a href="#">
-          <img class="brand-logo brand-logo--dji" src="#" alt="">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="brand-logo brand-logo--sp" src="#" alt="">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="brand-logo brand-logo--gopro" src="#" alt="">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img class="brand-logo brand-logo--vive" src="#" alt="">
-        </a>
-      </li>
-    </ul>
 
-  </section>
+  <div class="container">
+    <section class="brands page-main__brands">
+      <h2 class="g-hidden">Логотипы брэндов</h2>
+      <ul class="brands__list">
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <img class="logo-brand logo-brand--dji" src="img/brand1-color.jpg" alt="Брэнд Dji">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <img class="logo-brand logo-brand--sp" src="img/brand2-color.jpg" alt="Брэнд SP Gadgets">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <img class="logo-brand logo-brand--gopro" src="img/brand3-color.jpg" alt="Брэнд GoPro">
+          </a>
+        </li>
+        <li class="brands__item">
+          <a class="brands__link" href="#">
+            <img class="logo-brand logo-brand--vive" src="img/brand4-color.jpg" alt="Брэнд Vive">
+          </a>
+        </li>
+      </ul>
 
-  <section class="about-us">
-    <h2 class="large-title">О нас</h2>
-    <p class="main-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-    <p class="main-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
-      транспортными компаниями:</p>
+    </section>
 
-    <ul class="partners-list">
-      <li class="partners-list__item">Деловые Линии</li>
-      <li class="partners-list__item">Автотрейдинг</li>
-      <li class="partners-list-__item">ЖелДорЭкспедиция</li>
-    </ul>
+    <div class="wrapper-columns page-main__wrapper-columns">
+      <section class="inform-column inform-column--about-us">
+        <h2 class="title-middle inform-column__title-middle">О нас</h2>
+        <p class="inform-column__text inform-column__text--mb-28">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="inform-column__text inform-column__text--mb-68">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+          транспортными компаниями:</p>
 
-    <a class="btn" href="#">Подробнее о нас</a>
-  </section>
+        <ul class="inform-column__list">
+          <li class="inform-column__item">Деловые Линии</li>
+          <li class="inform-column__item">Автотрейдинг</li>
+          <li class="inform-column__item">ЖелДорЭкспедиция</li>
+        </ul>
 
-  <section class="contacts">
-    <h2 class="large-title">Контакты</h2>
-    <p class="main-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность
-      покупки. Всякое
-      бывает.</p>
-    <a href="#">Карта расположения</a>
+        <a class="btn btn--width-260" href="#">Подробнее о нас</a>
+      </section>
 
-    <a class="btn" href="#">Подробнее о нас</a>
-  </section>
+      <section class="inform-column inform-column--contacts">
+        <h2 class="title-middle inform-column__title-middle">Контакты</h2>
+        <p class="inform-column__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
+          работоспособность
+          покупки. Всякое
+          бывает.</p>
+        <p class="inform-column__map-wrapper">
+          <iframe class="inform-column__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473595!2d37.52742931594991!3d55.68703400452994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1528707231013" frameborder="0"></iframe>
+        </p>
+
+        <a class="btn btn--width-260 btn--contacts-js" href="#">Напишите нам</a>
+      </section>
+    </div>
+  </div>
 </main>
-<footer class="main-footer">
-  <div class="footer-left">
-    <a class="logo logo--yellow"><h1>Device</h1></a>
-    <p class="main-text">г. Москва, ул. Строителей, 15</p>
-  </div>
 
-  <div class="center">
-    <ul class="main-menu">
-      <li>
-        <a class="main-menu__link main-menu__link--white" href="#">
-          Доствака
-        </a>
-      </li>
-      <li>
-        <a class="main-menu__link main-menu__link--white" href="#">
-          Гарантия
-        </a>
-      </li>
-      <li>
-        <a class="main-menu__link main-menu__link--white" href="#">
-          Контакты
-        </a>
-      </li>
-    </ul>
-    <ul class="social">
-      <li><a class="social-btn social-btn--fb" href="#">Фейсбук</a></li>
-      <li><a class="social-btn social-btn--insta" href="#">Инстаграмм</a></li>
-      <li><a class="social-btn social-btn--twitter" href="#">Твиттер</a></li>
-    </ul>
-  </div>
+<footer class="footer-main">
+  <div class="container container--flex-fs">
+    <div class="left footer-main__left">
+      <a class="logo-main left__logo-main">
+        <img class="logo-main__img" src="img/logo-yellow.png" alt="DEVICE">
+      </a>
+      <p class="address-text">г. Москва, ул. Строителей, 15</p>
+    </div>
 
-  <div class="right">
-    <ul class="user-block">
-      <li><a class="user-block__item user-block__item--login-yellow" href="#">Войти</a></li>
-      <li><a class="user-block__item user-block__item--compare-yellow" href="#">Сравнить</a></li>
-      <li><a class="user-block__item user-block__item--basket-yellow" href="#">Корзина</a></li>
-    </ul>
-  <p class="main-text">Тел.: +7 (495) 495-95-95</p>
-    <a class="copyright" href="#">HTML academy</a>
+    <div class="center footer-main__center">
+      <ul class="main-menu center__main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu__link--white" href="#">
+            Доствака
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu__link--white" href="#">
+            Гарантия
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu__link--white" href="#">
+            Контакты
+          </a>
+        </li>
+      </ul>
+      <ul class="social footer-main__social">
+        <li class="social__item"><a class="social-btn social-btn--fb" href="#"><span class="g-hidden">Фейсбук</span></a></li>
+        <li class="social__item"><a class="social-btn social-btn--insta" href="#"><span class="g-hidden">Инстаграмм</span></a></li>
+        <li class="social__item"><a class="social-btn social-btn--twitter" href="#"><span class="g-hidden">Твиттер</span></a></li>
+      </ul>
+    </div>
 
+    <div class="right footer-main__right">
+      <ul class="user-navigation right__user-navigation">
+        <li class="user-navigation__item">
+          <a class="user-navigation__link user-navigation__link--login-yellow" href="#">Войти</a>
+        </li>
+        <li class="user-navigation__item">
+          <a class="user-navigation__link user-navigation__link--compare-yellow" href="#">Сравнить</a>
+        </li>
+        <li class="user-navigation__item">
+          <a class="user-navigation__link user-navigation__link--cart-yellow" href="#">Корзина</a>
+        </li>
+      </ul>
+      <p class="phone-text right__phone-text">Тел.: +7 (495) 495-95-95</p>
+      <a class="copyright" href="#"><span class="g-hidden">HTML academy</span></a>
+
+    </div>
   </div>
 </footer>
 
+<div class="popup-overlay">
 <section class="popup-message">
-  <form class="popup-form" action="#" method="post">
-    <p>
-    <label class="popup-input__label" for="name">Ваше имя:</label>
-    <input class="popup-input" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
+  <h2 class="g-hidden">Форма отправки сообщения</h2>
+  <form class="form-popup" action="#" method="post">
+    <p class="form-popup__item form-popup__item--width-360px">
+    <label class="form-popup__label " for="name">Ваше имя:</label>
+    <input class="input-text-popup input-text-popup--width-100" type="text" name="name" id="name" placeholder="Представьтесь пожалуйста">
     </p>
-    <p>
-      <label class="popup-input__label" for="email">Ваш e-mail:</label>
-      <input class="popup-input" type="email" name="email" id="email" placeholder="Дляотправки ответа">
-    </p>
-
-    <p>
-    <label class="popup-input__label" for="text">Текст письма:</label>
-    <textarea class="popup-input" name="text" id="text" cols="30" rows="10">В свободной форме</textarea>
+    <p class="form-popup__item form-popup__item--width-360px">
+      <label class="form-popup__label" for="email">Ваш e-mail:</label>
+      <input class="input-text-popup input-text-popup--width-100" type="email" name="email" id="email" placeholder="Для отправки ответа">
     </p>
 
-    <button class="btn" type="submit">Отправить</button>
+    <p class="form-popup__item form-popup__item--width-100">
+    <label class="form-popup__label" for="text">Текст письма:</label>
+    <textarea class="input-text-popup input-text-popup--width-100" name="text" id="text" cols="30" rows="7" placeholder="В свободной форме"></textarea>
+    </p>
+
+    <button class="btn form-popup__btn btn--width-200" type="submit">Отправить</button>
   </form>
 
-  <span class="popup-close"></span>
+  <button class="popup-close"><span class="g-hidden">Закрыть</span></button>
 </section>
+</div>
 
 <script src="js/main.js"></script>
 </body>

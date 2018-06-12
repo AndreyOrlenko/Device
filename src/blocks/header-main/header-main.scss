@@ -9,8 +9,12 @@
     margin-bottom: -10px;
   }
 
-
   &__wrapper-user-block {
     margin-bottom: 27px;
+  }
+
+  &--catalog {
+    min-height: 148px;
+    padding: 0 60px 38px 60px;
   }
 }

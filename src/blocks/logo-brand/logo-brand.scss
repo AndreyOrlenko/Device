@@ -1,0 +1,12 @@
+.logo-brand {
+  display: block;
+  opacity: 0.2;
+  filter: grayscale(100%);
+  transition: all linear 0.3s;
+
+  &:hover {
+    opacity: 1;
+    filter: unset;
+    transition: all linear 0.3s;
+  }
+}

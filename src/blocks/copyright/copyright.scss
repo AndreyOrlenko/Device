@@ -1,0 +1,14 @@
+.copyright {
+  display: block;
+  width: 27px;
+  height: 35px;
+  margin-left: auto;
+  background: url("logo-html.svg") no-repeat center center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}

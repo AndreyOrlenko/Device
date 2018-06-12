@@ -1,0 +1,20 @@
+.btn-controls {
+  width: 11px;
+  height: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--up {
+    background: url("icon-up-dir.svg") no-repeat center center;
+  }
+
+  &--down {
+    background: url("icon-down-dir.svg") no-repeat center center;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+}

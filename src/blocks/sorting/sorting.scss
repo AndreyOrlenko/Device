@@ -1,0 +1,45 @@
+.sorting {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: baseline;
+  flex-grow: 1;
+  padding-top: 25px;
+  @include font("OpenSans", 400);
+  font-size: 14px;
+  line-height: 18px;
+  background: $color-grey-light;
+
+  &__title-small {
+    margin-left: 75px;
+    margin-right: 55px;
+  }
+
+  &__list {
+    @extend %reset-mp;
+    @extend %reset-ls;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+
+  &__direction {
+    margin-left: auto;
+  }
+
+  &__btn-controls {
+    margin-right: 15px;
+  }
+}

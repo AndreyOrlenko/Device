@@ -1,0 +1,17 @@
+.catalog-product {
+   width: 100%;
+  padding: 70px 0 0 72px;
+   background: #ffffff;
+
+  &__list {
+    @extend %reset-ls;
+    @extend %reset-mp;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__catalog-card {
+    margin-bottom: 70px;
+  }
+ }

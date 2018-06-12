@@ -11,3 +11,11 @@
   font-family: $name, "Times New Roman", sans-serif;
   font-weight: $weight;
 }
+
+@mixin bg-input-grey ($opacity) {
+  background: rgba(229,229,229,$opacity);
+}
+
+@mixin ol-orange-main ($opacity) {
+  outline: rgba(240,197,46,$opacity);
+}

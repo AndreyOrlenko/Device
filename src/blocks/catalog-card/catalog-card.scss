@@ -1,0 +1,64 @@
+.catalog-card {
+  position: relative;
+  width: 360px;
+  
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    color: inherit;
+    
+    &:hover .catalog-card__upper-layer, &:focus .catalog-card__upper-layer {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 380px;
+      width: auto;
+      margin: 0px;
+      clip: auto;
+    }
+  }
+
+  &__title {
+    @extend %reset-mp;
+    width: 260px;
+    @include font("Gilroy", 800);
+    font-size: 18px;
+    line-height: 22px;
+
+  }
+
+  &__price {
+    @include font("Gilroy", 300);
+    font-size: 16px;
+    line-height: 20px;
+
+  }
+
+
+  &__upper-layer {
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: rgba($color-grey-middle,0.7);
+  }
+
+  &__comparison {
+    font-size: 13px;
+    line-height: 36px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}

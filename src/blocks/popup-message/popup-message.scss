@@ -1,0 +1,21 @@
+.popup-message {
+  position: relative;
+  max-width: 760px;
+  flex-grow: 1;
+  padding: 90px 100px 0 100px;
+  background: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2), 20px 0 40px -20px rgba(0,0,0,0.75), -20px 0 40px -20px rgba(0,0,0,0.75);
+
+
+  &--animanion-show {
+    animation-name: horizontalMovementIn;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+  }
+  &--animanion-hide {
+    animation-name: horizontalMovementOut;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+}

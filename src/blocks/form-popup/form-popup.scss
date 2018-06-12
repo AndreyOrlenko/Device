@@ -1,0 +1,31 @@
+.form-popup {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  &__item {
+    @extend %reset-mp;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 40px;
+    }
+
+    &--width-100 {
+      flex-basis: 100%;
+    }
+    &--width-360px {
+      flex-basis: 360px;
+    }
+  }
+  &__label {
+    @include font("Gilroy", 800);
+    font-size: 18px;
+    line-height: 18px;
+    color: inherit;
+
+  }
+
+  &__btn {
+    margin-bottom: 78px;
+  }
+}

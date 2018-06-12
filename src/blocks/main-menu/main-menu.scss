@@ -12,23 +12,24 @@
 
   &__item {
     position: relative;
+    margin-right: 38px;
+    &:nth-child(4), &:last-child {
+      margin-right: 0px;
+    }
     &--catalog {
-      margin-right: auto;
+      margin-right: 294px;
       &:hover, &:focus {
         .main-menu__sub-list {
           left: -60px;
           z-index: 10;
-          padding: 0 500px 52px 60px;
+          padding: 18px 500px 34px 60px;
           width: 600px;
           height: auto;
           margin: 0px;
-          clip: unset;
+          clip: auto;
           overflow: visible;
         }
       }
-    }
-    &--margin-40 {
-      margin-right: 40px;
     }
     &--margin-112 {
       margin-right: 112px;
@@ -40,18 +41,18 @@
     font: inherit;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: $color-text-main;
+    color: inherit;
     &:hover {
       opacity: 0.6;
     }
     &:focus + .main-menu__sub-list {
       left: -60px;
       z-index: 10;
-      padding: 0 500px 52px 60px;
+      padding: 18px 500px 34px 60px;
       width: 600px;
       height: auto;
       margin: 0px;
-      clip: unset;
+      clip: auto;
       overflow: visible;
     }
     &:active {
@@ -100,11 +101,11 @@
     &--visible {
       left: -60px;
       z-index: 10;
-      padding: 0 500px 52px 60px;
+      padding: 18px 500px 34px 60px;
       width: 600px;
       height: auto;
       margin: 0px;
-      clip: unset;
+      clip: auto;
       overflow: visible;
     }
   }

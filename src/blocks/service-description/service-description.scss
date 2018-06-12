@@ -1,9 +1,9 @@
 .service-description {
   display: none;
   position: relative;
-  top: -32px;
+  top: -50px;
   width: 455px;
-  padding: 0 300px 0 0;
+  padding: 20px 300px 0 0;
 
   &__title-middle {
     margin-bottom: 28px;
@@ -14,20 +14,35 @@
   }
 
   &--delivery {
-    background: url("delivery.svg") no-repeat 556px 15px;
+    background: url("delivery.svg") no-repeat 556px 35px;
     background-size: 134px 166px;
 
   }
 
   &--guarantee {
-
+    background: url("warranty.svg") no-repeat 537px 15px;
+    background-size: 171px 184px;
   }
 
   &--credit {
-    
+    background: url("credit.svg") no-repeat 528px 12px;
+    background-size: 156px 186px;
   }
 
   &--visible {
     display: block;
+  }
+
+  &--animationIn {
+    animation-name: emersion;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+  }
+  &--animationOut {
+    animation-name: disappearing;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+
   }
 }

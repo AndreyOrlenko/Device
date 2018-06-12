@@ -1,0 +1,28 @@
+.filter-group {
+  @extend %reset-mp;
+  width: 200px;
+  padding-top: 10px;
+  border: none;
+  border-top: 2px solid #000000;
+  @include font("OpenSans", 300);
+  font-size: 14px;
+  line-height: 40px;
+
+  &__title {
+    @extend %reset-mp;
+    margin-bottom: 30px;
+    @include font("Gilroy", 800);
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &__list {
+    @extend %reset-mp;
+    @extend %reset-ls;
+  }
+
+  &__item {
+    @extend %reset-mp;
+  }
+
+}

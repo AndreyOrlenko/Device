@@ -7,12 +7,14 @@
 
 @import "../blocks/container/container.scss";
 @import "../blocks/title-middle/title-middle.scss";
+@import "../blocks/title-small/title-small.scss";
 @import "../blocks/logo-main/logo-main.scss";
 @import "../blocks/btn/btn.scss";
+@import "../blocks/btn-controls/btn-controls.scss";
 
 @import "../blocks/page-main/page-main.scss";
 
-//index header
+//header main
 @import "../blocks/header-main/header-main.scss";
 @import "../blocks/form-search/form-search.scss";
 @import "../blocks/input-search/input-search.scss";
@@ -33,3 +35,37 @@
 @import "../blocks/service/service.scss";
 @import "../blocks/service-list/service-list.scss";
 @import "../blocks/service-description/service-description.scss";
+@import "../blocks/brands/brands.scss";
+@import "../blocks/logo-brand/logo-brand.scss";
+@import "../blocks/wrapper-columns/wrapper-columns.scss";
+@import "../blocks/inform-column/inform-column.scss";
+
+//footer main
+@import "../blocks/footer-main/footer-main.scss";
+@import "../blocks/left/left";
+@import "../blocks/address-text/address-text.scss";
+@import "../blocks/social/social.scss";
+@import "../blocks/social-btn/social-btn.scss";
+@import "../blocks/right/right.scss";
+@import "../blocks/copyright/copyright.scss";
+@import "../blocks/phone-text/phone-text.scss";
+@import "../blocks/center/center.scss";
+
+//popup
+@import "../blocks/popup-overlay/popup-overlay.scss";
+@import "../blocks/popup-message/popup-message.scss";
+@import "../blocks/form-popup/form-popup.scss";
+@import "../blocks/input-text-popup/input-text-popup.scss";
+@import "../blocks/popup-close/popup-close.scss";
+
+//catalog main
+@import "../blocks/page-title/page-title.scss";
+@import "../blocks/bradecrumbs/bradecrumbs.scss";
+@import "../blocks/wrapper-titles-catalog/wrapper-titles-catalog.scss";
+@import "../blocks/sorting/sorting.scss";
+@import "../blocks/wrapper-content-catalog/wrapper-content-catalog.scss";
+@import "../blocks/filter/filter.scss";
+@import "../blocks/catalog-product/catalog-product.scss";
+@import "../blocks/filter-group/filter-group.scss";
+@import "../blocks/input/input.scss";
+@import "../blocks/catalog-card/catalog-card.scss";

@@ -1,0 +1,35 @@
+.bradecrumbs {
+  @extend %reset-mp;
+  @extend %reset-ls;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  &__item {
+    position: relative;
+    margin-right: 33px;
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -16px;
+      width: 4px;
+      height: 7px;
+      margin-top: -3px;
+      background: url("nav-arrow.svg") no-repeat center center;
+    }
+  }
+
+
+  &__link {
+    display: block;
+    color: inherit;
+  }
+}
