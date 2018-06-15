@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   align-items: baseline;
   flex-grow: 1;
-  padding-top: 25px;
+  padding: 25px 0;
   @include font("OpenSans", 400);
   font-size: 14px;
   line-height: 18px;
@@ -33,6 +33,13 @@
 
   &__link {
     color: inherit;
+
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__direction {

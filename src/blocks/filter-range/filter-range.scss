@@ -1,0 +1,60 @@
+.filter-range {
+ width: 200px;
+  @include font("Gilroy", 300);
+  font-size: 14px;
+  line-height: 22.27px;
+  color: rgba($color-text-main, 0.3);
+
+
+  &__range-controls {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    padding-top: 10px;
+  }
+  
+  &__scale {
+    width: 100%;
+    height: 2px;
+    background: #dbdbdb;
+  }
+  
+  &__bar {
+    width: 60%;
+    height: 2px;
+    background: #91c92f;
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    background: #ababab;
+    cursor: pointer;
+
+    &:active {
+      top: -1px;
+      border-width: 9px;
+    }
+
+    &--min {
+      left: -7px;
+    }
+    &--max {
+      left: 107px;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    width: 70px;
+
+    border: none;
+    background: transparent;
+    font: inherit;
+    color: inherit;
+  }
+}

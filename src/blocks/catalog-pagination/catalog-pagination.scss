@@ -1,0 +1,66 @@
+.catalog-pagination {
+  display: flex;
+  justify-content: space-between;
+  min-width: 650px;
+  background: $color-grey-light;
+  @include font("Gilroy", 800);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &__btn {
+    width: 126px;
+
+    &--prev {
+      margin-right: auto;
+    }
+    &--next {
+      margin-left: auto;
+    }
+  }
+
+  &__number {
+    margin-right: 31px;
+    padding: 25px 0;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  &__item {
+    color: rgba($color-text-main, 0.3);
+
+    &--active {
+      color: rgba($color-text-main, 1);
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $color-text-main;
+    &:active {
+      color: rgba($color-text-main, 0.3);
+    }
+
+    &--prev {
+      padding: 25px 10px;
+
+      &:hover {
+        background: #d9d9d9;
+      }
+    }
+
+    &--next {
+      padding: 25px 10px;
+
+      &:hover {
+        background: #d9d9d9;
+      }
+    }
+  }
+
+}
+
+

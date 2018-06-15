@@ -46,7 +46,7 @@
           <li class="main-menu__sub-item main-menu__sub-item--margin-60"><a class="main-menu__sub-link" href="#">Виртуальная реальность</a></li>
           <li class="main-menu__sub-item main-menu__sub-item--margin-78"><a class="main-menu__sub-link" href="#">Фитнес-браслеты</a></li>
           <li class="main-menu__sub-item"><a class="main-menu__sub-link" href="#">Квадрокоптеры</a></li>
-          <li class="main-menu__sub-item main-menu__sub-item--margin-87"><a class="main-menu__sub-link" href="catalog.html">Моноподы для селфи</a></li>
+          <li class="main-menu__sub-item main-menu__sub-item--margin-87"><a class="main-menu__sub-link">Моноподы для селфи</a></li>
           <li class="main-menu__sub-item"><a class="main-menu__sub-link" href="#">Умные часы</a></li>
           <li class="main-menu__sub-item main-menu__sub-item--last"><a class="main-menu__sub-link" href="#">Экшн-камеры</a></li>
         </ul>
@@ -91,7 +91,7 @@
   </div>
 
   <div class="wrapper-titles-catalog">
-    <div class="container container--flex-fs container--flex-stretch">
+    <div class="container container--flex-fs container--flex-stretch container--flex-no-wrap">
       <h2 class="title-small wrapper-titles-catalog__title-small title-small--catalog-filter">Фильтр:</h2>
 
       <section class="sorting">
@@ -116,11 +116,29 @@
     <div class="container container--flex-sb container--flex-no-wrap">
 
       <section class="filter page-main__filter">
-        <form class="filter-form" method="get" action="#">
+        <form class="filter-form filter__filter-form" method="get" action="#">
 
           <fieldset class="filter-group">
             <h3 class="filter-group__title">Стоимость</h3>
-            <input class="input-range" type="range" min="0" max="8000" step="100">
+            <div class="filter-range filter-group__filter-range">
+              <div class="filter-range__range-controls">
+                <div class="filter-range__scale">
+                  <div class="filter-range__bar"></div>
+                </div>
+                <div class="filter-range__toggle filter-range__toggle--min"></div>
+                <div class="filter-range__toggle filter-range__toggle--max"></div>
+              </div>
+              <div class="filter-range__price-controls">
+                <label class="filter-range__label" for="range-min">от
+                  <input class="filter-range__input filter-range__input--min" id="range-min" name="range-min" type="text" value="0">
+                </label>
+                <label class="filter-range__label" for="range-max">до
+                  <input class="filter-range__input filter-range__input--max" id="range-max" name="range-max" type="text" value="5000">
+                </label>
+              </div>
+            </div>
+
+
           </fieldset>
 
           <fieldset class="filter-group">
@@ -186,70 +204,78 @@
         <ul class="catalog-product__list">
 
           <li class="catalog-card catalog-product__catalog-card">
+            <img class="catalog-photo catalog-card__catalog-photo" src="img/item-1.jpg"
+                 alt="Фото простой селфи-палки">
+            <div class="catalog-card__upper-layer">
+              <button class="btn btn--width-200">В корзину</button>
+              <button class="catalog-card__comparison">Добавить к сравнению</button>
+            </div>
             <a class="catalog-card__link" href="#">
-              <img class="catalog-photo" src="img/item-1.jpg" alt="Фото простой селфи-палки">
               <h3 class="catalog-card__title">Любительская селфи-палка</h3>
-              <b class="catalog-card__price">500 руб.</b>
-              <div class="catalog-card__upper-layer">
-                <button class="btn btn--width-200">В корзину</button>
-                <button class="catalog-card__comparison" href="#">Добавить к сравнению</button>
-              </div>
             </a>
+            <b class="catalog-card__price">500 руб.</b>
+
 
           </li>
 
           <li class="catalog-card catalog-product__catalog-card">
+            <img class="catalog-photo catalog-card__catalog-photo" src="img/item-2.jpg"
+                 alt="Фото профессиональной селфи-палки">
+            <div class="catalog-card__upper-layer">
+              <button class="btn btn--width-200">В корзину</button>
+              <button class="catalog-card__comparison">Добавить к сравнению</button>
+            </div>
             <a class="catalog-card__link" href="#">
-              <img class="catalog-photo" src="img/item-2.jpg" alt="Фото профессиональной селфи-палки">
               <h3 class="catalog-card__title">Профессиональная селфи-палка </h3>
-              <b class="catalog-card__price">1500 руб.</b>
             </a>
-            <div class="catalog-card__upper-layer">
-              <button class="btn btn--width-200">В корзину</button>
-              <button class="catalog-card__comparison" href="#">Добавить к сравнению</button>
-            </div>
+            <b class="catalog-card__price">1500 руб.</b>
+
+
           </li>
 
           <li class="catalog-card catalog-product__catalog-card">
+            <img class="catalog-photo catalog-card__catalog-photo" src="img/item-3.jpg"
+                 alt="Фото непотопляемой селфи-палки">
+            <div class="catalog-card__upper-layer">
+              <button class="btn btn--width-200">В корзину</button>
+              <button class="catalog-card__comparison">Добавить к сравнению</button>
+            </div>
             <a class="catalog-card__link" href="#">
-            <img class="catalog-photo" src="img/item-3.jpg" alt="Фото непотопляемой селфи-палки">
-            <h3 class="catalog-card__title">Непотопляемая селфи-палка</h3>
+              <h3 class="catalog-card__title">Непотопляемая селфи-палка</h3>
+            </a>
             <b class="catalog-card__price">2500 руб.</b>
-            </a>
-            <div class="catalog-card__upper-layer">
-              <button class="btn btn--width-200">В корзину</button>
-              <button class="catalog-card__comparison" href="#">Добавить к сравнению</button>
-            </div>
           </li>
 
           <li class="catalog-card catalog-product__catalog-card">
-            <a class="catalog-card__link" href="#">
-            <img class="catalog-photo" src="img/item-4.jpg" alt="Фото селфи-палки в виде руки">
-            <h3 class="catalog-card__title">Селфи-палка «Следуй за мной»</h3>
-            <b class="catalog-card__price">4900 руб.</b>
-            </a>
+
+            <img class="catalog-photo catalog-card__catalog-photo" src="img/item-4.jpg"
+                 alt="Фото селфи-палки в виде руки">
             <div class="catalog-card__upper-layer">
               <button class="btn btn--width-200">В корзину</button>
-              <a class="catalog-card__comparison" href="#">Добавить к сравнению</a>
+              <button class="catalog-card__comparison">Добавить к сравнению</button>
             </div>
+            <a class="catalog-card__link" href="#">
+              <h3 class="catalog-card__title">Селфи-палка «Следуй за мной»</h3>
+            </a>
+            <b class="catalog-card__price">4900 руб.</b>
           </li>
         </ul>
 
-        <ul class="catalog-pagination">
-          <li>
-            <a class="catalog-pagination__item catalog-pagination__item--prev" href="#">Назад</a>
+        <ul class="catalog-pagination catalog-product__catalog-pagination">
+          <li class="catalog-pagination__btn catalog-pagination__btn--prev">
+            <a class="catalog-pagination__link catalog-pagination__link--prev" href="#">Назад</a>
           </li>
-          <li>
-            <a class="catalog-pagination__item" href="#">1</a>
+          <li class="catalog-pagination__number">
+            <span class="catalog-pagination__item catalog-pagination__item--active">1</span>
           </li>
-          <li>
-            <a class="catalog-pagination__item" href="#">2</a>
+          <li class="catalog-pagination__number">
+            <span class="catalog-pagination__item">2</span>
           </li>
-          <li>
-            <a class="catalog-pagination__item" href="#">3</a>
+          <li class="catalog-pagination__number">
+            <span class="catalog-pagination__item">3</span>
           </li>
-          <li>
-            <a class="catalog-pagination__item catalog-pagination__item--next" href="#">Вперед</a>
+          <li class="catalog-pagination__btn catalog-pagination__btn--next">
+            <a class="catalog-pagination__link catalog-pagination__link--next" href="#">Вперед</a>
           </li>
         </ul>
       </section>

@@ -6,7 +6,7 @@
   border-top: 2px solid #000000;
   @include font("OpenSans", 300);
   font-size: 14px;
-  line-height: 40px;
+  line-height: 24px;
 
   &__title {
     @extend %reset-mp;
@@ -19,10 +19,15 @@
   &__list {
     @extend %reset-mp;
     @extend %reset-ls;
+    margin-bottom: 40px;
   }
 
   &__item {
     @extend %reset-mp;
+    margin-bottom: 15px;
   }
 
+  &__filter-range {
+    margin-bottom: 33px;
+  }
 }

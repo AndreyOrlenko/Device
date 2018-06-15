@@ -1,16 +1,25 @@
 .catalog-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
   position: relative;
   width: 360px;
-  
 
   &__link {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
     color: inherit;
-    
-    &:hover .catalog-card__upper-layer, &:focus .catalog-card__upper-layer {
+
+    &:hover, &:focus {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__catalog-photo {
+    margin-bottom: 35px;
+    &:hover + .catalog-card__upper-layer, &:focus + .catalog-card__upper-layer {
       top: 0;
       left: 0;
       right: 0;
@@ -19,6 +28,7 @@
       margin: 0px;
       clip: auto;
     }
+
   }
 
   &__title {
@@ -27,7 +37,6 @@
     @include font("Gilroy", 800);
     font-size: 18px;
     line-height: 22px;
-
   }
 
   &__price {
@@ -36,7 +45,6 @@
     line-height: 20px;
 
   }
-
 
   &__upper-layer {
     border: 0;
@@ -51,7 +59,27 @@
     position: absolute;
     width: 0px;
     height: 0px;
-    background-color: rgba($color-grey-middle,0.7);
+    background-color: rgba($color-grey-middle, 0.7);
+
+    &:hover {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 380px;
+      width: auto;
+      margin: 0px;
+      clip: auto;
+    }
+
+    &--visible {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 380px;
+      width: auto;
+      margin: 0px;
+      clip: auto;
+    }
   }
 
   &__comparison {
@@ -60,5 +88,14 @@
     border: none;
     background: transparent;
     cursor: pointer;
+    opacity: 0.5;
+
+
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 0.2;
+    }
   }
 }

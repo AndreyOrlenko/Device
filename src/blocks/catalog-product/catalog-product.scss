@@ -9,9 +9,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   &__catalog-card {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+  }
+
+  &__catalog-pagination {
+    margin-bottom: 73px;
   }
  }

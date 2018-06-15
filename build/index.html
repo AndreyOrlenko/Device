@@ -6,8 +6,9 @@
   <title>Device</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
 </head>
-<body class="page-main">
+<body class="page-main index-js">
 
 <div class="container">
 <header class="header-main">
@@ -217,17 +218,17 @@
   </div>
 
   <section class="service page-main__service">
-    <div class="container container--flex-sb">
+    <div class="container container--flex-fs">
       <h2 class="g-hidden">Сервис</h2>
-      <ul class="service-list">
+      <ul class="service-list service__service-list">
         <li>
-          <button class="btn service-list__btn btn--width-160 btn--black-bg btn--active" href="#">Доставка</button>
+          <button class="btn service-list__btn btn--width-160 btn--black-bg btn--active">Доставка</button>
         </li>
         <li>
-          <button class="btn service-list__btn btn--width-160 btn--black-bg" href="#">Гарантия</button>
+          <button class="btn service-list__btn btn--width-160 btn--black-bg">Гарантия</button>
         </li>
         <li>
-          <button class="btn service-list__btn btn--width-160 btn--black-bg" href="#">Кредит</button>
+          <button class="btn service-list__btn btn--width-160 btn--black-bg">Кредит</button>
         </li>
       </ul>
 
@@ -265,23 +266,27 @@
       <h2 class="g-hidden">Логотипы брэндов</h2>
       <ul class="brands__list">
         <li class="brands__item">
-          <a class="brands__link" href="#">
+          <a class="brands__link brands__link--dji" href="#">
             <img class="logo-brand logo-brand--dji" src="img/brand1-color.jpg" alt="Брэнд Dji">
+            <div class="brands__upper-layer brands__upper-layer--dji"></div>
           </a>
         </li>
         <li class="brands__item">
-          <a class="brands__link" href="#">
+          <a class="brands__link brands__link--sp" href="#">
             <img class="logo-brand logo-brand--sp" src="img/brand2-color.jpg" alt="Брэнд SP Gadgets">
+            <div class="brands__upper-layer brands__upper-layer--sp"></div>
           </a>
         </li>
         <li class="brands__item">
-          <a class="brands__link" href="#">
+          <a class="brands__link brands__link--gopro" href="#">
             <img class="logo-brand logo-brand--gopro" src="img/brand3-color.jpg" alt="Брэнд GoPro">
+            <div class="brands__upper-layer brands__upper-layer--gopro"></div>
           </a>
         </li>
         <li class="brands__item">
-          <a class="brands__link" href="#">
+          <a class="brands__link brands__link--vive" href="#">
             <img class="logo-brand logo-brand--vive" src="img/brand4-color.jpg" alt="Брэнд Vive">
+            <div class="brands__upper-layer brands__upper-layer--vive"></div>
           </a>
         </li>
       </ul>
@@ -310,9 +315,8 @@
           работоспособность
           покупки. Всякое
           бывает.</p>
-        <p class="inform-column__map-wrapper">
-          <iframe class="inform-column__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473595!2d37.52742931594991!3d55.68703400452994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1528707231013" frameborder="0"></iframe>
-        </p>
+         <div class="inform-column__map"></div>
+
 
         <a class="btn btn--width-260 btn--contacts-js" href="#">Напишите нам</a>
       </section>
@@ -399,5 +403,7 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb8y7vk7I-2C5sMhUV4eUIAsX5LDDRl4E&callback=initMap">
+</script>
 </body>
 </html>

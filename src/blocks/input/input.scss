@@ -8,8 +8,7 @@
   }
 
   &:focus + &__label &__checkbox, &:focus + &__label &__radio{
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
+    opacity: 0.3;
   }
 
   &__label {
@@ -66,15 +65,19 @@
     vertical-align: middle;
     margin-right: 16px;
 
+    &:hover {
+      opacity: 0.3;
+    }
+
     &::before {
       content: '';
       display: none;
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 9px;
-      height: 9px;
-      margin-top: -5px;
+      width: 8px;
+      height: 8px;
+      margin-top: -4px;
       margin-left: -4px;
       border-radius: 50%;
       background: #000000;

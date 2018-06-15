@@ -11,5 +11,38 @@
 
   &__link {
     display: block;
+    position: relative;
+
+    &:hover .brands__upper-layer {
+      opacity: 0;
+      transition: opacity linear 300ms;
+    }
+  }
+
+  &__upper-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 260px;
+    height: 150px;
+    transition: opacity linear 300ms;
+
+    &--dji {
+      background: url("brand1-grey.jpg") no-repeat center center;
+    }
+
+    &--sp {
+      background: url("brand2-grey.jpg") no-repeat center center;
+    }
+
+    &--gopro {
+      background: url("brand3-grey.jpg") no-repeat center center;
+    }
+
+    &--vive {
+      background: url("brand4-grey.jpg") no-repeat center center;
+    }
+
   }
 }
